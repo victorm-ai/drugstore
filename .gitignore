@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DrugStoreTestProject/.vs/DrugStoreTestProject
+/DrugStoreTestProject/.vs/ProjectEvaluation
+/DrugStoreTestProject/obj
