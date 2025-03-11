@@ -9,7 +9,7 @@ namespace DrugStoreTestProject
         {
             // Opciones de EF Core: ajusta para tu proveedor preferido
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
-            optionsBuilder.UseSqlServer("Data Source=PosFarmacia.db");
+            optionsBuilder.UseSqlServer("Data Source=");
 
             using (var context = new AppDbContext(optionsBuilder.Options))
             {
@@ -84,7 +84,7 @@ namespace DrugStoreTestProject
                     CategoryId = catAnalgesicsId
                 };
                 context.Products.Add(product);
-                context.SaveChanges();
+                context.SaveChanges()
             }
 
             // Proveedores, Clientes, etc. (puedes agregar más ejemplos)
@@ -109,7 +109,7 @@ namespace DrugStoreTestProject
                     Phone = "555-5678",
                     Email = "juan@example.com"
                 };
-                context.Clients.Add(client);
+                context.Clients.Add();
                 context.SaveChanges();
             }
         }
